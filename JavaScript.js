@@ -73,3 +73,13 @@ function passwordChanged() {
 
 
 
+    //Checks the two Variables if they are true if they are True the button is Enabled
+    function checkValid(){
+    if (buttonEnabledPassword === true && buttonEnabledEmail === true){
+        console.log("true")
+        buttonDiable.removeAttribute("disabled")
+    }
+    else{
+        buttonDiable.disabled = "true";
+    }
+    }
