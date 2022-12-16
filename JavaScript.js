@@ -47,3 +47,29 @@ function passwordChanged() {
     //Length is >= 8
     var enoughRegex = new RegExp("(?=.{8,}).*", "g");
     var pwd = document.getElementById("password");
+    //Checks with the RegExp if the value is equal to the input
+    if (pwd.value.length == 0) {
+        strength.innerHTML = '<div id="textinside"  class="strength">Password: No Password</div>';
+        buttonEnabledPassword = false;
+        checkValid();
+    } else if (false === enoughRegex.test(pwd.value)) {
+        strength.innerHTML = '<div id="textinside"  class="strength">Password: More Character!</div>';
+        buttonEnabledPassword = false;
+        checkValid();
+    } else if (strongRegex.test(pwd.value)) {
+        //Adds a new div for the Strength level
+        strength.innerHTML = '<div id="textinside" class="strengthStrong">Password: Strong!</div>';
+        buttonEnabledPassword = true;
+        checkValid();
+    } else if (mediumRegex.test(pwd.value)) {
+        strength.innerHTML = '<div id="textinside"  class="strengthMedium">Password: Medium!</div>';
+        buttonEnabledPassword = true;
+        checkValid();
+    } else {
+        strength.innerHTML = '<div id="textinside"  class="strengthWeak">Password: Weak!</div>';
+        buttonEnabledPassword = true;
+        checkValid();
+    }
+
+
+
