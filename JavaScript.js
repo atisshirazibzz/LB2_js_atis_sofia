@@ -70,9 +70,7 @@ function passwordChanged() {
         buttonEnabledPassword = true;
         checkValid();
     }
-
-
-
+}
     //Checks the two Variables if they are true if they are True the button is Enabled
     function checkValid(){
     if (buttonEnabledPassword === true && buttonEnabledEmail === true){

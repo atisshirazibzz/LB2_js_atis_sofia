@@ -135,19 +135,18 @@ footer{
 }
 
 .container{
-    width: 600px;
-    max-width: 600px;
-    margin: 1 rem;
-    padding: 2 rem;
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
-    border-radius: var(--border-radius);
-    border: 5px solid;
+    width: 400px;
+    position: relative;
+    margin-left: 100px;
+    border: 3px solid;
     border-color: floralwhite;
+    border-radius: 15px;
+
 }
 .container,
 .form__input,
 .form__button{
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .form > *:first-child{
@@ -156,6 +155,7 @@ footer{
 .submitButtonDiv{
     display: flex;
     justify-content: end;
+    padding-bottom: 15px;
 }
 .form__button{
     background-color: #18181A;
@@ -174,8 +174,8 @@ footer{
 }
 
 .form__title{
-  margin-bottom: 2rem;
     text-align: center;
+    padding-top: 20px;
 }
 
 
@@ -183,9 +183,11 @@ footer{
     margin-bottom: 0;
 }
 
-.form__message{
-  text-align: center;
-    margin-bottom: 1rem;
+.form__link{
+    font-size: 18px;
+    padding-left: 15px;
+    padding-bottom: 20px;
+
 }
 
 .form__message--success{
@@ -210,19 +212,16 @@ footer{
     outline: none;
     background: #18181A;
 }
-.form__input:focus{
-    background: deeppink;
-}
 
 .form__input--error{
     color: red;
     border-color: red;
 }
 #strengthBorder{
-    border: 2px  solid floralwhite;
+    border: 1px  solid floralwhite;
     border-radius: 10px;
-    height: 20px;
-    margin: 5%;
+    height: 25px;
+    margin: 20px 15px;
     width: 90%;
     font-size: 12px;
 }
@@ -268,5 +267,6 @@ footer{
     border-radius: 8px;
 }
 #errorMessage{
+    padding: 10px 15px 0px;
     font-size: 15px;
 }
