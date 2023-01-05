@@ -18,7 +18,6 @@ async function addPicture() {
             )
         )
 }
-
 //Checks if the email is Valid with the RegExp
 function emailChanged(){
     var errorMessage = document.getElementById("errorMessage")
